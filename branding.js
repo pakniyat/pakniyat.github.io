@@ -1,5 +1,5 @@
 function aliheader(){
-	document.write('<img src="UA_Reverse.png" hspace="0"/>');
+	document.write('<img src="UA_Reverse.png" vspace="10"/>');
 }
 
 function alifooter(){
