@@ -1,5 +1,5 @@
 function aliheader(){
-	document.write('<img src="IRIMGeorgiaTech.png" border="0" hspace="20"/>');
+	document.write('<img src="UA_Reverse.png" hspace="0"/>');
 }
 
 function alifooter(){
