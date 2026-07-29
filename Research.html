@@ -1,100 +1,434 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Ali Pakniyat</title>
-<link href="defaultstyles.css" rel="stylesheet" media="screen" />
-<script type="text/javascript" src="branding.js"></script>
-<script type="text/JavaScript" src="curvycorners.js"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Research &middot; Ali Pakniyat</title>
+<meta name="description" content="Research of Ali Pakniyat and the Multi-Modal Multi-Agent Control (M3AC) Lab: a unified mathematical and computational theory for the optimal control of nonlinear multi-agent stochastic hybrid systems, spanning foundational theory, scalable algorithms, and real-world deployment." />
 
-    <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-</script>
-<script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
+<link href="styles.css" rel="stylesheet" />
+<script src="branding.js"></script>
 </head>
 
 <body>
 <div id="container">
-	<div id="ali"><script type="text/javascript">aliheader();</script></div>
-    <div id="wrapper">
-    <div id="banner">
-    	<h1>Ali Pakniyat</h1>
-    </div>
-    <div id="nav">
-    	<ul>
-      	<li><a href="index.html">Home</a></li>
-            <li><a href="Research.html">Research</a></li>
-            <li><a href="Teaching.html">Teaching</a></li>
-            <li><a href="Publications.html">Publications</a></li>
-            <li><a href="CV.html">CV</a></li>
-            <li><a href="Contact.html">Contact</a></li>
 
+  <div id="ali"><script>aliheader();</script></div>
+
+  <div id="wrapper">
+
+    <header id="banner">
+      <h1>Ali Pakniyat</h1>
+      <p class="subtitle">Founder &amp; Director, M&sup3;AC Lab &middot; Assistant Professor, Mechanical Engineering</p>
+    </header>
+
+    <nav id="nav">
+      <div class="nav-inner">
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776; Menu</button>
+        <ul id="navmenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Research.html" class="current">Research</a></li>
+          <li><a href="Teaching.html">Teaching</a></li>
+          <li><a href="Publications.html">Publications</a></li>
+          <li><a href="CV.html">CV</a></li>
+          <li><a href="Contact.html">Contact</a></li>
         </ul>
-    </div>
+      </div>
+    </nav>
+
     <div id="page">
-		
-        <div id="content">
-        
-            <script type="text/javascript">// <![CDATA[
-function ShowHide(divId)
-{
-if(document.getElementById(divId).style.display == 'none')
-{
-document.getElementById(divId).style.display='block';
-}
-else
-{
-document.getElementById(divId).style.display = 'none';
-}
-}
-// ]]></script>
-        
-        
-            My research focuses on the theoretical developments and implementation aspects of <b>optimal control</b> within a general framework of <b>hybrid systems</b>, that is dynamical systems involving interactions of "continuous" dynamics, "discrete" dynamics and "stochastic" diffusions. My contributions include the discovery of fundamental theoretical results, the development of novel computational algorithms and their implementation and experimental validation on a wide range of systems in automotive, robotics, and mathematical finance
-            <br \>
-            <br \>
+      <div id="content">
+
+        <!-- Sidebar -->
+        <aside id="sidebar">
+          <h3>On this page</h3>
+          <ul class="sidebar-links">
+            <li><a href="#vision">Research Vision</a></li>
+            <li><a href="#theory">Theory</a></li>
+            <li><a href="#algorithms">Algorithms</a></li>
+            <li><a href="#applications">Real-World Systems</a></li>
+            <li><a href="#future">Sponsored Research Projects</a></li>
+          </ul>
+          <h3>The Lab</h3>
+          <p><strong>M&sup3;AC Lab</strong><br />Multi-Modal Multi-Agent Control<br />University of Alabama</p>
+          <h3>Dig deeper</h3>
+          <ul class="sidebar-links">
+            <li><a href="Publications.html">Full publication list</a></li>
+            <li><a href="CV.html">Curriculum Vitae</a></li>
+            <li><a href="Contact.html">Get in touch</a></li>
+          </ul>
+        </aside>
+
+        <!-- Main column -->
+        <div class="main-col">
+
+          <!-- ===================== Vision ===================== -->
+          <h2 id="vision">Research Vision</h2>
+          <p class="section-lead">Establishing a unified mathematical and computational theory for optimal control of nonlinear multi-agent stochastic hybrid systems.</p>
+
+          <div class="vision-intro">
+            <p class="lead">
+              I direct the <strong>Multi-Modal Multi-Agent Control (M&sup3;AC) Lab</strong>, where the research program confronts the layered complexity of the most challenging autonomous systems.
+            </p>
+          </div>
+
+          <figure class="fig-media fig-banner">
+            <img src="images/M3AC_research_engine.png" alt="The M3AC research engine: a cyclical flow linking foundational theory, computational algorithms, and high-impact applications into a unified machinery for autonomous decision-making." loading="lazy" onerror="this.closest('figure').classList.add('fig-missing')" />
+            <figcaption>The M&sup3;AC research engine &mdash; theory, algorithms, and applications advancing together.</figcaption>
+          </figure>
             
-            <h2 class="wsite-content-title" style="text-align:left;"><font size="4"> Stay tuned for details to be added soon.</font></h2>
-            Meanwhile, please refer to my slides for the presentation titled "<a target="_blank" href="Ali_Pakniyat_2019_Presentation.pdf">The Quest for Missing Component: Dualities in Hybrid Optimal Control</a>".
-            <br \>
-            <br \>
-            
-            <iframe src="Ali_Pakniyat_2019_Presentation.pdf" width="100%" height="500px">
-            </iframe>
-            
-            
-            
-            
-            
-        </div>
-	</div>
-    </div>
-    <div id="footer">
-        <script type="text/javascript"> document.write("Last Modified: " + document.lastModified.slice(0,10));</script> <br />
-        &copy; Ali Pakniyat &nbsp
-    </div>
-</div>
+          <div class="vision-intro">
+            <p>
+              The core intellectual challenge is that real-world autonomous systems—from robotic agents to intelligent infrastructure—do not respect the clean boundaries of classical theory. They simultaneously involve continuous evolution, discrete updates, and dynamic probabilistic uncertainty. This challenge is further magnified in multi-agent systems, where existing results are largely confined to isolated, idealized corners of the problem space. My research program addresses this through a synergistic cycle: foundational theoretical questions are <strong>motivated</strong> by real-world implementation challenges; the resulting theories are <strong>translated</strong> into practical, scalable computational algorithms; and these algorithms are rigorously <strong>validated</strong> on experimental platforms. 
+            </p>
+          </div>
+
+          <!-- ===================== Pillar 1: Theory ===================== -->
+          <h2 id="theory">Theory &mdash; Unifying Hybrid, Stochastic and Multi-Agent Frameworks</h2>
+          <p class="section-lead">Bridging the theoretical gaps between single- and few-agent stochastic hybrid systems and the infinite-population and infinite-network-size limits.</p>
+
+          <div class="fig-split">
+            <div class="fig-text">
+              <p>
+                <h4 class="app-title">Multi-Agent Systems Theory Across Scales:</h4> 
+                  Scaling coordinated autonomy from small groups to massive populations requires a fundamental shift in how inter-agent interactions and the connectivity graph are mathematically modeled. This comprehensive theory spans the full dual-direction spectrum of network complexity. On one axis, it scales from finite subpopulations (where individual interactions dominate) towards infinite subpopulations, culminating in <strong>Hybrid Mean-Field (HMF)</strong> systems theory. On the other axis, it scales from finite exact graphs to massive network limits representable by <strong>Graphon Mean-Field (GMF)</strong> systems. By advancing a paradigm shift toward "unnormalized" occupation measures, this framework seamlessly unifies all four operational regimes within a single measure-theoretic mathematical structure.
+              </p>
+            </div>
+            <figure class="fig-media">
+              <br>
+              <img src="images/M3AC_MultiScale.png" alt="A graphon visualization illustrating the limiting connectivity structure of a large network of interacting agents." loading="lazy" onerror="this.closest('figure').classList.add('fig-missing')" />
+              <img src="images/MeanField_Graphon.png" alt="A graphon visualization illustrating the limiting connectivity structure of a large network of interacting agents." loading="lazy" onerror="this.closest('figure').classList.add('fig-missing')" />
+              <figcaption>From finite networks to their graphon and mean-field limits.</figcaption>
+            </figure>
+          </div>
+
+          <div class="fig-split reverse">
+            <div class="fig-text">
+              <p>
+                <h4 class="app-title">Unified framework for hybrid optimal control:</h4>
+                To rigorously handle systems that involve intertwined interactions of continuous evolutions and discrete updates, I have established unified versions for the <strong>Hybrid Minimum Principle (HMP)</strong> and <strong>Hybrid Dynamic Programming (HDP)</strong> within a general framework that simultaneously accommodates both autonomous (uncontrolled) and free (controlled) switchings, as well as non-trivial state jumps, and state-space dimension changes upon switching—resolving long-standing fragmentation in the optimal control of hybrid systems
+                <a class="ref" target="_blank" rel="noopener" href="https://doi.org/10.1007/s00498-023-00374-1">[HMP theory, MCSS 2023]</a><a class="ref" target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/document/8017505">[IEEE TAC 2017]</a>.
+              </p>
+            </div>
+            <figure class="fig-media">
+              <br><br>
+              <img src="images/ValueFunctionVariation.png" alt="Bundles of stochastic sample trajectories evolving through a switching event." loading="lazy" onerror="this.closest('figure').classList.add('fig-missing')" />
+              <figcaption>Perturbation of an optimal trajectory passing through a switching manifold.</figcaption>
+            </figure>
+          </div>
+
+          <div class="fig-split">
+            <div class="fig-text">
+              <p>
+                <h4 class="app-title">Strengthening optimality guarantees in stochastic hybrid systems:</h4>
+                I established a new version of the <strong>Stochastic Hybrid Minimum Principle (SHMP)</strong> that ensures almost-surely satisfaction of equality-type switching conditions which are required by switching manifolds in autonomous switchings. This represents a critical theoretical strengthening over prior results that could only guarantee satisfaction in expectation. This rigor is vital for physical systems where mode changes must occur with absolute certainty (e.g., a drone touching down on the water's surface before transitioning to sailing mode).
+              </p>
+            </div>
+            <figure class="fig-media">
+              <br><br>
+              <img src="images/StochHybridSampleTrajectory.png" alt="Placeholder for SHMP visual." loading="lazy" onerror="this.closest('figure').classList.add('fig-missing')" />
+              <figcaption>Optimality of solutions while ensuring almost-surely satisfaction of switching manifold conditions.</figcaption>
+            </figure>
+          </div>
+
+          <div class="fig-split reverse">
+            <div class="fig-text">
+              <p>
+                <h4 class="app-title">Terminal state delivery under probabilistic uncertainty:</h4>
+                In precision applications like landing of reusable rockets, systems must reach exact final configurations despite environmental noise. Because stochastic uncertainty makes exact point-wise constraining terminal states impossible, I established an alternative theoretical framework to rigorously enforce these requirements probabilistically. Specifically, the <strong>Terminally Constrained Stochastic Minimum Principle (TC-SMP)</strong> provides theoretical guarantees for satisfying perpetually renewing constraints on the conditional expectations of the terminal state. This breakthrough enables guaranteed terminal delivery for nonlinear stochastic systems, pushing well beyond covariance control and optimal transport frameworks
+                <a class="ref" target="_blank" rel="noopener" href="Publications.html">[TC-SMP; IUTAM 2024]</a>.
+              </p>
+            </div>
+            <figure class="fig-media">
+              <br>
+              <img src="images/TCSMP_Visualized.png" alt="Measure-theoretic distributional shaping." loading="lazy" onerror="this.closest('figure').classList.add('fig-missing')" />
+              <img src="images/TCSMPsteering.png" alt="Placeholder for TC-SMP visual." loading="lazy" onerror="this.closest('figure').classList.add('fig-missing')" />
+              <img src="images/TCSMPsteeringProb.png" alt="Measure-theoretic distributional shaping." loading="lazy" onerror="this.closest('figure').classList.add('fig-missing')" />
+              <figcaption>Guaranteed terminal state delivery via causal expectation constraints; (top:) concept visualization, (middle:) state space evolution, (bottom:) probability space evolution.</figcaption>
+            </figure>
+          </div>
+
+          <div class="fig-split">
+            <div class="fig-text">
+              <p>
+                <h4 class="app-title">Distributional state assignment:</h4>
+                As a second approach to handling terminal state requirements under stochastic uncertainty, I established a framework to impose constraints directly on the probability distribution of the terminal state. <strong>Distributionally Constrained Convex Duality Optimal Control (DC-CDOC)</strong> enables this by deriving optimal inputs via a family of Hamilton-Jacobi (HJ) type equations. Built upon the duality relationship between the space of probability measures and continuous functions, this measure-theoretic methodology allows for the exact assignment of desired distributions, extending far beyond standard mean and covariance steering approaches for nonlinear stochastic systems
+                <a class="ref" target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/document/9790838">[L-CSS 2022]</a>.
+              </p>
+            </div>
+            <figure class="fig-media">
+              <br>
+              <img src="images/DCCDOC_MixedGaussian.png" alt="Measure-theoretic distributional shaping." loading="lazy" onerror="this.closest('figure').classList.add('fig-missing')" />
+              <img src="images/DCCDOC_Evolution.png" alt="Measure-theoretic distributional shaping." loading="lazy" onerror="this.closest('figure').classList.add('fig-missing')" />
+              <figcaption>Measure-theoretic distributional shaping (top:) scalar state probability shaping into mixed Gaussian distribution; (bottom:) two-dimensional state shaping into Gaussian.</figcaption>
+            </figure>
+          </div>
     
-    <!-- Start of StatCounter Code for Default Guide -->
-<script type="text/javascript">
-var sc_project=10711985; 
-var sc_invisible=0; 
-var sc_security="f06e3bd2"; 
-var scJsHost = (("https:" == document.location.protocol) ?
-"https://secure." : "http://www.");
-document.write("<sc"+"ript type='text/javascript' src='" +
-scJsHost+
-"statcounter.com/counter/counter.js'></"+"script>");
+          <!-- CBF -->
+          <div class="fig-split reverse">
+            
+            <div class="fig-text">
+              <h4 class="app-title">Tightening of Control Barrier Functions</h4>
+              <p>
+                  In autonomous multi-agent systems, bounded disturbances and unmodeled dynamics can compromise the safety guarantees of nominal control algorithms. To ensure rigorous collision avoidance under uncertainty for nonlinear multi-agent systems, this research establishes a predictive, <strong>tube-based tightening framework for exponential Control Barrier Functions (eCBFs)</strong>. By bounding state deviations within a Robust Positively Invariant (RPI) tube, the method utilizes Lipschitz-bounded support functions to dynamically tighten the safety constraints based on the worst-case geometric decrease along the tube. Furthermore, whenever knowledge about the agents' cooperative policy—such as leader-following consensus—is available, this framework can significantly reduce the conservatism of general-purpose tightening, preserving a larger operational envelope while rigorously guaranteeing safety 
+                <a class="ref" target="_blank" rel="noopener" href="Publications.html">[Submitted to IEEE TAC]</a>.
+              </p>
+            </div>
+
+            <figure class="fig-media">
+            <br>
+              <img src="images/CBF_Tightening.png" alt="Geometric illustration of tube-based CBF tightening" style="width: 100%; max-width: 600px;" onerror="this.closest('figure').classList.add('fig-missing')" />
+              <img src="images/MultiAgent_ObsCBF.png" alt="Geometric illustration of tube-based CBF tightening" style="width: 100%; max-width: 600px;" onerror="this.closest('figure').classList.add('fig-missing')" />
+              <figcaption>Geometric illustration of tube-based tightening. <strong>Top:</strong> The nominal barrier boundary (black) is dynamically tightened (orange) based on the worst-case deviation within the Robust Positively Invariant (RPI) tube, guaranteeing the physical state never breaches safety constraints. <strong>Bottom:</strong> The visualization for 5 agents and one obstacle. </figcaption>
+            </figure>
+
+          </div>
+
+          <!-- ===================== Pillar 2: Algorithms ===================== -->
+          <h2 id="algorithms">Computational Algorithms &mdash; Solving the Intractable</h2>
+          <p class="section-lead">Translating theoretical advances into practical, high-performance computational tools.</p>
+
+            
+          <div class="fig-split">
+            <div class="fig-text">
+              <p>
+                <h4 class="app-title">HMP-Based Multiple Autonomous Switching (HMP-MAS) Algorithm:</h4>
+                Building on the analytical structure of the unified HMP, the explicitly-enhanced <strong>HMP-based Multiple Autonomous Switching (HMP-MAS)</strong> algorithm reliably solves a far broader class of hybrid problems. This computational tool incorporates closed-form expressions for key quantities, thus effectively handles computationally challenging boundary conditions stemming from autonomous switchings, non-identity state jumps, state-space dimension changes, and switching costs
+                <a class="ref" target="_blank" rel="noopener" href="Publications.html">[HMP-MAS; NAHS 2024]</a>.
+              </p>
+            </div>
+            <figure class="fig-media">
+              <img src="images/HMP-MAS-Updates.png" alt="Convergence behavior of the HMP-MAS algorithm across iterations." loading="lazy" onerror="this.closest('figure').classList.add('fig-missing')" />
+              <img src="images/HMP-MAS-Convergence.png" alt="Convergence behavior of the HMP-MAS algorithm across iterations." loading="lazy" onerror="this.closest('figure').classList.add('fig-missing')" />
+              <figcaption>Updates and convergence of the HMP-MAS algorithm across iterations.</figcaption>
+            </figure>
+          </div>
+            
+          <div class="content-block">
+            <p>
+              <h4 class="app-title">Feynman-Kac-Girsanov HJB Solver:</h4>
+              The Feynman-Kac representation theorem establishes that sample paths of a forward-backward stochastic process lie over the surface of the solution to some partial differential equations including, in particular, the nonlinear Hamilton-Jacobi-Bellman (HJB) equation. However, standard sample paths do not necessarily visit the specific state-space regions required for optimal control synthesis. This framework remedies this limitation through the targeted use of the Girsanov change of probability measures. By integrating this measure transformation with Rapidly-exploring Random Trees (RRTs), this methodology actively steers the sampling process toward critical regions, yielding highly accurate value function approximations
+              <a class="ref" target="_blank" rel="noopener" href="https://arxiv.org/abs/2210.10534">[IEEE TAC 2024]</a><a class="ref" target="_blank" rel="noopener" href="https://arxiv.org/abs/2103.14246">[Automatica 2023]</a>.
+            </p>
+            
+            <figure style="margin: 2rem 0; width: 100%;">
+              <img src="images/FeynmanKacGirsanov.png" alt="RRT-based trajectory sampling in state space utilizing Girsanov transformations." loading="lazy" style="width: 100%; height: auto; border-radius: 8px;" onerror="this.closest('figure').classList.add('fig-missing')" />
+              <figcaption style="text-align: center; margin-top: 0.5rem;">Feynman-Kac based forward-backward SDE sampling with Girsanov-steered RRTs.</figcaption>
+            </figure>
+          </div>
+
+          <div class="fig-split reverse">
+            <div class="fig-text">
+              <p>
+                <h4 class="app-title">Time-Reversal Control Synthesis:</h4>
+                In diffusion-based generative AI, structured data is reconstructed from pure noise by simulating a time-reversed stochastic process. This reversal is governed by the so-called "score function". Inspired by it, this research establishes a Score-Matching Time-Reversal Control Synthesis framework that shifts focus from computationally prohibitive optimality to provable finite-time attractability. By extracting the score function of a properly defined time-reversed diffusion process, the method constructs a feedback law that almost surely steers nonlinear stochastic systems to the targeted state.
+                <a class="ref" target="_blank" rel="noopener" href="https://arxiv.org/abs/2504.00238">[CDC 2025]</a>.
+              </p>
+            </div>
+            <figure class="fig-media">
+            <br>
+              <img src="images/TimeReversalBasis.png" alt="Schematic representation of time reversal analysis." loading="lazy" onerror="this.closest('figure').classList.add('fig-missing')" />
+              <img src="images/Time_Reversal_Schematic_Drawing.png" alt="Schematic representation of time reversal analysis." loading="lazy" onerror="this.closest('figure').classList.add('fig-missing')" />
+              <figcaption>Schematic representation of time reversal analysis for state steering; (top:) Visualization of time reversal for image generation, (bottom:) Proposed Score-Matching Time-Reversal Control Synthesis.</figcaption>
+            </figure>
+          </div>
+
+          <div class="fig-split">
+            <div class="fig-text">
+              <p>
+                <h4 class="app-title">Polynomial Approximation of Value Function:</h4>
+                Approximating value functions via polynomials reduces the search from an uncountable space of continuous functions to a countable space of polynomial coefficients. Sums-of-squares (SOS) optimization further reduces this search to the mathematically tractable convex cone of SOS polynomials. Leveraging this hierarchical structure, this research establishes a framework that translates nonlinear estimation into computationally solvable semidefinite programs (SDPs), yielding direct construction of feedback policies for a broad class of nonlinear systems
+                <a class="ref" target="_blank" rel="noopener" href="Publications.html">[CDC 2019]</a>.
+              </p>
+            </div>
+            <figure class="fig-media">
+              <img src="images/ExStochasticSOS.png" alt="SOS polynomial convex optimization." loading="lazy" onerror="this.closest('figure').classList.add('fig-missing')" />
+              <img src="images/ExStochasticSOS_coefficients.png" alt="SOS polynomial convex optimization." loading="lazy" onerror="this.closest('figure').classList.add('fig-missing')" />
+              <figcaption>Convex optimization based estimation of value functions using Sums-of-Squares (SOS) polynomials.</figcaption>
+            </figure>
+          </div>
+
+          <!-- ===================== Pillar 3: Applications ===================== -->
+          <h2 id="applications">Implementation &mdash; Validating on Real-World Hardware</h2>
+          <p class="section-lead">The ultimate test of any control theory is its performance in the physical world. I have consistently validated my theoretical developments on complex hybrid systems across robotics, automotive, and quantitative finance.</p>
+            
+          <!-- AeroMarine -->
+            <h4 class="app-title">The AeroMarine Drone</h4>
+            <p>
+                Within the M³AC Lab, the AeroMarine serves as a multi-modal robotic testbed capable of both flying and sailing. Navigating across these distinct physical domains introduces a severe, mission-level trade-off: aerial flight offers rapid transit at a massive energetic cost, whereas surface sailing provides immense energy efficiency at the expense of speed. The core autonomous challenge is therefore empowering the robot to dynamically decide exactly when, where, and how to transition between domains to optimize its mission. By utilizing the Hybrid Minimum Principle (HMP) alongside the HMP-MAS algorithm, this research established a mathematical framework that simultaneously solves for the optimal continuous control and the exact, policy-dependent switching conditions. Rather than relying on heuristics, the framework couples full 6-DoF flight mechanics with internal motor dynamics, allowing the system to natively compute the absolute minimum energy-consuming trajectory that perfectly balances high-speed aerial maneuvers with sustainable aquatic operation
+                <a class="ref" target="_blank" rel="noopener" href="https://asmedigitalcollection.asme.org/lettersdynsys/article/3/3/031008/1168966">[ASME Letters DSC 2023]</a>.
+              </p>
+              
+              <!-- Media Section -->
+            <div style="margin-top: 24px; text-align: center;">
+              
+            <figure class="fig-media">
+              <img src="images/AeroMarine_HybridAutomata.png" alt="The AeroMarine multi-modal drone, capable of both flying above the water and sailing on its surface." loading="lazy" onerror="this.closest('figure').classList.add('fig-missing')" />
+              <figcaption>AeroMarine &mdash; a flying-and-sailing testbed for hybrid optimal control.</figcaption>
+            </figure>
+              <br>
+              <!-- Side-by-Side Videos -->
+              <div style="display: flex; flex-direction: row; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                
+                <!-- Video 1: Optimal Time -->
+                <div style="flex: 1; min-width: 250px; max-width: 400px;">
+                  <video width="100%" autoplay loop muted playsinline controls style="border-radius: 6px;">
+                    <source src="videos/drone_animation_Optimal_time.mp4" type="video/mp4">
+                  </video>
+                  <p style="font-size: 0.9em; margin-top: 8px; color: #666;">Minimum Time Policy</p>
+                </div>
+                  
+                <!-- Video 2: Optimal Energy -->
+                <div style="flex: 1; min-width: 250px; max-width: 400px;">
+                  <video width="100%" autoplay loop muted playsinline controls style="border-radius: 6px;">
+                    <source src="videos/drone_animation_Optimal_energy.mp4" type="video/mp4">
+                  </video>
+                  <p style="font-size: 0.9em; margin-top: 8px; color: #666;">Minimum Energy Policy</p>
+                </div>
+                  
+                <figure class="fig-media">
+              <img src="images/AeroMarine_Compare.png" alt="The AeroMarine multi-modal drone, capable of both flying above the water and sailing on its surface." loading="lazy" onerror="this.closest('figure').classList.add('fig-missing')" />
+              <figcaption>Comparison of Minimum Time and Minimum Energy Policies.</figcaption>
+            </figure>
+              </div>
+            </div>
+            
+<br>           
+          <!-- EV -->
+          <div class="app-section" style="margin-bottom: 40px;">
+            <h4 class="app-title">Automotive Systems: Dual Planetary Transmissions</h4>
+            <p>
+              As part of a $10M Automotive Partnership Canada (APC) initiative, this research investigated the energy consumption benefits of transmission-equipped electric vehicles. To this end, I contributed to the design, control, and experimentation of a novel, patented Dual Planetary Transmission (DPT) architecture capable of perpetually transmitting power during transitional phases without torque interruption
+              <a class="ref" target="_blank" rel="noopener" href="https://patents.google.com/patent/US9702438B2">[US Patent 9,702,438 B2]</a>.
+              I also established optimal control algorithms that precisely coordinate the motor-generator and transmission brakes to achieve seamless shifting, maximum acceleration, and minimum energy consumption. The underlying HMP-MAS algorithm and its solutions revealed distinct optimal strategies based on the driving objective: for eco-mode, an unanticipated, non-intuitive strategy emerges—later experimentally validated—where actively utilizing power regeneration during the gear transition itself minimizes the total energy usage. In sharp contrast, the time-optimal sport-mode solutions dictate delaying the shift and maintaining full motor torque throughout the entire transitional phase 
+              <a class="ref" target="_blank" rel="noopener" href="https://doi.org/10.1016/j.nahs.2016.08.004">[NAHS 2017]</a>.
+            </p>
+
+            <!-- Inline Flexbox guarantees side-by-side layout -->
+            <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; gap: 20px; margin-top: 20px; flex-wrap: wrap;">
+              
+              <!-- Left Column: Hybrid Automata Image -->
+              <div style="flex: 1; min-width: 300px; text-align: left;">
+                <img src="images/HybridAutomataEV.png" alt="Hybrid Automata EV" style="width: 100%; max-width: 500px; height: auto;" />
+              </div>
+              
+              <!-- Right Column: Videos (Autoplaying) -->
+              <div style="flex: 1; min-width: 300px; display: flex; flex-direction: column; align-items: flex-end; gap: 15px;">
+                <video width="360" height="270" poster="videos/Transmission_Gear_1.jpg" autoplay loop muted playsinline controls style="max-width: 90%; height: auto;">
+                  <source src="videos/Transmission_Gear_1.mp4" type="video/mp4">
+                </video>
+                
+                <video width="360" height="270" controls loop style="max-width: 90%; height: auto;">
+                  <source src="videos/Transmission_Gear_Transition.mp4" type="video/mp4">
+                </video>
+                
+                <video width="360" height="270" autoplay loop muted playsinline controls style="max-width: 90%; height: auto;">
+                  <source src="videos/Transmission_Gear_2.mp4" type="video/mp4">
+                </video>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Trading -->
+          <div class="fig-split reverse">
+            <div class="fig-text">
+              <h4 class="app-title">Algorithmic Trading &amp; Optimal Execution</h4>
+              <p>
+                In highly volatile financial markets, the optimal execution of large trades is deeply intertwined with the collective behavior of High-Frequency Traders (HFTs). To capture this, this research establishes a Hybrid Mean-Field Game (HMFG) framework modeling the interplay between a single dominant "major agent" and a massive population of "minor agents." The framework integrates continuous state diffusion alongside discrete structural mode switching. For instance, the major agent can switch macro-level modes—like toggling an advertisement campaign—to alter the market environment, while minor agents simultaneously evaluate optimal stopping criteria to switch between active (buying/selling) and inactive (frozen) modes. By unifying these hybrid dynamics, this work yields computationally tractable best-response strategies that rigorously account for both the major agent’s outsized influence and the corresponding mean-field of the HFT population 
+                <a class="ref" target="_blank" rel="noopener" href="https://doi.org/10.1109/CDC.2017.8264119">[CDC 2017]</a>.
+              </p>
+            </div>
+            <figure class="fig-media">
+              <br>
+              <img src="images/HybridMajorMinorMFG.png" alt="A market model with a major agent interacting with a population of minor high-frequency traders." loading="lazy" onerror="this.closest('figure').classList.add('fig-missing')" />
+              <figcaption>Hybrid Mean-Field Game architecture illustrating the interaction between a major agent switching macro-modes and a population of minor agents transitioning between active and inactive states.</figcaption>
+            </figure>
+          </div>
+
+          <!-- Mathematical Epidemiology -->
+          <div class="fig-split">
+            
+            <div class="fig-text">
+              <h4 class="app-title">Multi-Modal Epidemiological Policy Making</h4>
+              <p>
+                Public health interventions are intrinsically hybrid, evolving abruptly between distinct regimes like baseline transmission, lockdowns, and vaccination campaigns. To capture this, this research establishes a hybrid optimal control framework for epidemiological systems featuring phase-dependent dynamics, changing state-space dimensions, and non-trivial state jumps. By invoking the Hybrid Minimum Principle (HMP), the framework simultaneously co-optimizes continuous intervention inputs—such as quarantine rates—and the exact timing of both autonomous and controlled policy switchings. This mathematically proves that dynamically coordinating Work-From-Home (WFH) and vaccination policies minimizes combined socioeconomic costs and epidemic burden significantly better than traditional single-phase interventions 
+                <a class="ref" target="_blank" rel="noopener" href="Publications.html">[Submitted to NAHS]</a>.
+              </p>
+            </div>
+
+            <figure class="fig-media">
+              <img src="images/HybridEpidemiology.png" alt="Hybrid Epidemiological System Diagram." loading="lazy" onerror="this.closest('figure').classList.add('fig-missing')" />
+              
+              <!-- Added a slight margin to separate the two images visually -->
+              <img src="images/HybridEpidemiologyCost.png" alt="Hybrid Epidemiological Cost Evolution." loading="lazy" onerror="this.closest('figure').classList.add('fig-missing')" style="margin-top: 15px;" />
+              
+              <figcaption><strong>Top:</strong> Hybrid automaton for the multi-phase epidemiological system, illustrating transitions between Return-to-Office, Work-From-Home, and Vaccination regimes. <strong>Bottom:</strong> Evolution of public costs, demonstrating the mathematical optimality of the schedule compared to earlier and later vaccination mandate initiations.</figcaption>
+            </figure>
+
+          </div>
+
+          <!-- ===================== Funded Projects ===================== -->
+          <h2 id="future">Sponsored Research Projects</h2>
+          <p class="section-lead">Solving fundamental open problems in control theory with direct applications to space explorations and beyond.</p>
+
+          <!-- NSF Funded Project -->
+          <div class="app-section" style="margin-bottom: 40px;">
+            <h4 class="app-title">
+              <a href="https://arxiv.org/abs/2605.01559" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
+                State and Covariance Steering for Nonlinear and Hybrid Stochastic Systems
+              </a>
+            </h4>
+            <p>
+                Funded by the National Science Foundation (NSF), this project proposes a transformational paradigm shift in how uncertainty is managed in autonomous systems. Rather than merely controlling systems <em>"with uncertainty,"</em> this research establishes variational and measure-theoretic frameworks to directly <em>"control the uncertainty"</em> by shaping the entire state distribution (including mean, covariance, and higher-order moments). 
+                
+                Crucially, this project extends the <a href="Publications.html" target="_blank" rel="noopener">Terminally Constrained Stochastic Minimum Principle (TC-SMP)</a> and <a href="https://ieeexplore.ieee.org/document/9790838" target="_blank" rel="noopener">Distributionally Constrained Convex Duality Optimal Control (DC-CDOC)</a> into the domain of stochastic hybrid systems. This breakthrough enables the rigorous management of uncertainty across complex, mode-switching dynamics with both autonomous and controlled transitions. 
+              </p>
+              <div style="margin-top: 24px; text-align: center;">
+              <figure class="fig-media" style="margin: 0 auto;">
+                <img src="images/M3AC_MarsRoverLandingStages.png" alt="The 9-phase Mars Entry, Descent, and Landing (EDL) sequence." loading="lazy" style="width: 100%; max-width: 800px; border-radius: 8px;" onerror="this.closest('figure').classList.add('fig-missing')" />
+                <figcaption>The 9-phase hybrid optimal control formulation of the Mars Entry, Descent, and Landing (EDL) sequence.</figcaption>
+              </figure>
+            </div>
+              <p>
+              This advanced theory is currently being applied to the highly challenging problem of Mars rover surface delivery system. Through modeling the Entry, Descent, and Landing (EDL) sequence as a 9-phase hybrid optimal control problem—encompassing mass ejections, parachute deployment, and powered terminal descent—this framework precisely controls the landing ellipse under severe atmospheric uncertainty, guaranteeing pinpoint delivery of scientific payloads to the Martian surface.
+            </p>
+          </div>
+
+          <p class="closing-note">
+            For technical details and mathematical proofs, please see the <a href="Publications.html">publications page</a>. The M&sup3;AC Lab welcomes collaboration with fellow researchers and engineering teams building real-world autonomous systems. <a href="Contact.html">Get in touch</a> to discuss ongoing projects.
+          </p>
+
+        </div><!-- /main-col -->
+      </div><!-- /content -->
+    </div><!-- /page -->
+
+  </div><!-- /wrapper -->
+
+  <footer id="footer">
+    <span id="lastmod"></span><br />
+    &copy; Ali Pakniyat
+  </footer>
+
+</div><!-- /container -->
+
+<script>
+  (function () {
+    var btn = document.querySelector('.nav-toggle');
+    var menu = document.getElementById('navmenu');
+    if (btn && menu) {
+      btn.addEventListener('click', function () {
+        var open = menu.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    }
+    var lm = document.getElementById('lastmod');
+    if (lm) { lm.textContent = 'Last modified: ' + document.lastModified.slice(0, 10); }
+  })();
 </script>
-<noscript><div class="statcounter"><a title="shopify
-analytics tool" href="http://statcounter.com/shopify/"
-target="_blank"><img class="statcounter"
-src="http://c.statcounter.com/10711985/0/f06e3bd2/0/"
-alt="shopify analytics tool"></a></div></noscript>
-<!-- End of StatCounter Code for Default Guide -->
-    
 </body>
 </html>

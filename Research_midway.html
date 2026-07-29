@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Research &middot; Ali Pakniyat</title>
+<meta name="description" content="Research of Ali Pakniyat and the Multi-Modal Multi-Agent Control (M3AC) Lab: a unified mathematical and computational theory for the optimal control of nonlinear multi-agent stochastic hybrid systems, spanning foundational theory, scalable algorithms, and real-world deployment." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<link href="styles.css" rel="stylesheet" />
+<script src="branding.js"></script>
+</head>
+
+<body>
+<div id="container">
+
+  <div id="ali"><script>aliheader();</script></div>
+
+  <div id="wrapper">
+
+    <header id="banner">
+      <h1>Ali Pakniyat</h1>
+      <p class="subtitle">Founder &amp; Director, M&sup3;AC Lab &middot; Assistant Professor, Mechanical Engineering</p>
+    </header>
+
+    <nav id="nav">
+      <div class="nav-inner">
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776; Menu</button>
+        <ul id="navmenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Research.html" class="current">Research</a></li>
+          <li><a href="Teaching.html">Teaching</a></li>
+          <li><a href="Publications.html">Publications</a></li>
+          <li><a href="CV.html">CV</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="page">
+      <div id="content">
+
+        <!-- Sidebar -->
+        <aside id="sidebar">
+          <h3>On this page</h3>
+          <ul class="sidebar-links">
+            <li><a href="#vision">Research Vision</a></li>
+            <li><a href="#theory">Theory</a></li>
+            <li><a href="#algorithms">Algorithms</a></li>
+            <li><a href="#applications">Real-World Systems</a></li>
+            <li><a href="#future">Where I'm Headed</a></li>
+          </ul>
+          <h3>The Lab</h3>
+          <p><strong>M&sup3;AC Lab</strong><br />Multi-Modal Multi-Agent Control<br />University of Alabama</p>
+          <h3>Dig deeper</h3>
+          <ul class="sidebar-links">
+            <li><a href="Publications.html">Full publication list</a></li>
+            <li><a href="CV.html">Curriculum Vitae</a></li>
+            <li><a href="Contact.html">Get in touch</a></li>
+          </ul>
+        </aside>
+
+        <!-- Main column -->
+        <div class="main-col">
+
+          <!-- ===================== Vision ===================== -->
+          <h2 id="vision">Research Vision</h2>
+          <p class="section-lead">Building a rigorous, practical machinery of decision-making for the autonomous systems of the future.</p>
+
+          <div class="fig-split">
+            <div class="fig-text">
+              <p class="lead">
+                I direct the <strong>Multi-Modal Multi-Agent Control (M&sup3;AC) Lab</strong>, where my group builds a
+                unified mathematical and computational theory for the <strong>optimal control of nonlinear
+                multi-agent stochastic hybrid systems</strong>.
+              </p>
+              <p>
+                Here is the gap that drives the work. Real autonomous systems &mdash; a drone that flies and then lands
+                on water, a fleet of trucks threading a city, a spacecraft descending through an uncertain atmosphere
+                &mdash; do not respect the clean boundaries of classical control theory. They evolve continuously,
+                switch discretely, and live under genuine randomness, often all at once. Classical optimal control has
+                no unified foundation for such <em>stochastic hybrid</em> behavior, and the problem only compounds for
+                <em>many interacting agents</em>, where existing results cover only isolated corners of a landscape
+                defined by population size and network structure.
+              </p>
+              <p>
+                My program closes that gap with a single, self-reinforcing engine: real-world challenges
+                <strong>motivate</strong> new theory; the theory is <strong>translated</strong> into scalable
+                algorithms; and those algorithms are <strong>validated</strong> on physical hardware &mdash; each stage
+                feeding the next. The three sections below follow that loop: the theory, the algorithms, and the
+                systems they control.
+              </p>
+              <p class="credentials-note">
+                This program builds on my Ph.D. in Electrical &amp; Computer Engineering at McGill University and
+                postdoctoral work at the University of Michigan and Georgia Tech.
+              </p>
+            </div>
+            <figure class="fig-media">
+              <img src="images/ResearchOverView.png" alt="The M3AC research engine: a cyclical flow linking foundational theory, computational algorithms, and high-impact applications into a unified machinery for autonomous decision-making." loading="lazy" onerror="this.closest('figure').classList.add('fig-missing')" />
+              <figcaption>The M&sup3;AC research engine &mdash; theory, algorithms, and applications advancing together.</figcaption>
+            </figure>
+          </div>
+
+          <!-- ===================== Pillar 1: Theory ===================== -->
+          <h2 id="theory">Theory &mdash; a common language for hybrid, stochastic, multi-agent control</h2>
+          <p class="section-lead">Bridging areas of control theory that had developed in isolation.</p>
+
+          <div class="fig-split">
+            <div class="fig-text">
+              <p>
+                <strong>A unified minimum principle for hybrid systems.</strong> The two great pillars of optimal
+                control &mdash; Pontryagin's minimum principle and dynamic programming &mdash; were never fully
+                reconciled for systems that switch modes, jump in state, or even change dimension mid-flight. I
+                established unified versions of the <strong>Hybrid Minimum Principle (HMP)</strong> and
+                <strong>Hybrid Dynamic Programming (HDP)</strong> that handle autonomous and controlled switching,
+                state jumps, and state-dimension changes within one framework, and proved the exact relationship
+                between them
+                <a class="ref" target="_blank" rel="noopener" href="https://doi.org/10.1007/s00498-023-00374-1">[HMP theory, MCSS 2023]</a><a class="ref" target="_blank" rel="noopener" href="https://doi.org/10.1109/TAC.2020.2992450">[IEEE TAC 2021]</a>.
+                <span class="why">Why it matters: it gives engineers one rigorous rulebook for machines that abruptly change how they behave.</span>
+              </p>
+            </div>
+            <figure class="fig-media">
+              <img src="images/StochasticTrajectories_size.png" alt="Bundles of stochastic sample trajectories evolving through a switching event." loading="lazy" onerror="this.closest('figure').classList.add('fig-missing')" />
+              <figcaption>Stochastic trajectories through a switching event.</figcaption>
+            </figure>
+          </div>
+
+          <ul class="contrib-list">
+            <li>
+              <strong>Making guarantees hold with certainty, not just on average.</strong> My
+              <strong>Stochastic Hybrid Minimum Principle (SHMP)</strong> ensures switching conditions are satisfied
+              <em>almost surely</em> &mdash; a decisive strengthening over prior results that held only in expectation.
+              This is what lets you promise, for example, that a drone actually touches the water before it switches to
+              sailing, every single time, not merely on average.
+            </li>
+            <li>
+              <strong>Hitting a target state under randomness.</strong> The <strong>Terminally Constrained Stochastic
+              Minimum Principle (TC-SMP)</strong> provides guarantees for almost-sure satisfaction of terminal-state
+              constraints in nonlinear stochastic systems, pushing covariance control and optimal transport well beyond
+              their classical linear-quadratic-Gaussian limits
+              <a class="ref" target="_blank" rel="noopener" href="Publications.html">[TC-SMP; IUTAM 2024]</a>.
+            </li>
+            <li>
+              <strong>Shaping the whole probability distribution of the state.</strong> My
+              <strong>Distributionally Constrained Convex Duality Optimal Control (DC-CDOC)</strong> is a
+              measure-theoretic framework that assigns a desired <em>distribution</em> to the state of a nonlinear
+              stochastic system &mdash; not just its mean and covariance &mdash; via a duality between measures and
+              functions
+              <a class="ref" target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/document/9790838">[L-CSS 2022]</a>.
+            </li>
+          </ul>
+
+          <div class="fig-split reverse">
+            <div class="fig-text">
+              <p>
+                <strong>Multi-agent control across every scale.</strong> Coordinated autonomy looks completely
+                different for three robots than for three million. I have built theory spanning that full spectrum:
+                <strong>tube-based safety</strong> for finite, heterogeneous teams on fixed and switching communication
+                networks
+                <a class="ref" target="_blank" rel="noopener" href="https://arxiv.org/abs/2509.07304">[leader-follower consensus, 2025]</a>;
+                <strong>Hybrid Mean-Field Game (HMFG)</strong> theory for fully connected infinite populations
+                <a class="ref" target="_blank" rel="noopener" href="https://www.sciencedirect.com/science/article/abs/pii/S0005109822000899">[Automatica 2022]</a>;
+                and <strong>Graphon Mean-Field (GMF) control</strong> for enormous numbers of agents connected over
+                large, structured networks, based on their emergent limiting behavior
+                <a class="ref" target="_blank" rel="noopener" href="https://doi.org/10.1007/s11424-025-4507-7">[JSSC 2025]</a>.
+                <span class="why">Why it matters: the same principles must govern a handful of drones and a
+                nationwide fleet &mdash; this connects them.</span>
+              </p>
+            </div>
+            <figure class="fig-media">
+              <img src="images/graphon_visualization_final_numbered_from_1.png" alt="A graphon visualization illustrating the limiting connectivity structure of a large network of interacting agents." loading="lazy" onerror="this.closest('figure').classList.add('fig-missing')" />
+              <figcaption>From finite networks to their graphon and mean-field limits.</figcaption>
+            </figure>
+          </div>
+
+          <!-- ===================== Pillar 2: Algorithms ===================== -->
+          <h2 id="algorithms">Algorithms &mdash; turning theorems into computation</h2>
+          <p class="section-lead">A theory is only as useful as the code that runs it.</p>
+
+          <div class="fig-split">
+            <div class="fig-text">
+              <p>
+                <strong>An enhanced solver for switching systems (HMP-MAS).</strong> Building on the analytical
+                structure of my unified HMP, the <strong>HMP-based Multiple Autonomous Switching</strong> algorithm
+                uses closed-form expressions for key quantities to solve a far broader class of hybrid problems &mdash;
+                including those with state jumps, dimension changes, and switching costs &mdash; efficiently and
+                reliably
+                <a class="ref" target="_blank" rel="noopener" href="Publications.html">[HMP-MAS]</a>.
+              </p>
+            </div>
+            <figure class="fig-media">
+              <img src="images/HMP-MAS-Convergence.png" alt="Convergence behavior of the HMP-MAS algorithm across iterations." loading="lazy" onerror="this.closest('figure').classList.add('fig-missing')" />
+              <figcaption>Convergence of the HMP-MAS solver.</figcaption>
+            </figure>
+          </div>
+
+          <ul class="contrib-list">
+            <li>
+              <strong>Solving high-dimensional control PDEs by smart sampling.</strong> I developed a framework that
+              cracks the nonlinear Hamilton-Jacobi-Bellman equation by way of the <strong>Feynman-Kac</strong>
+              representation &mdash; recasting the PDE as an expectation over random trajectories &mdash; and then uses
+              the <strong>Girsanov change of measure</strong> to steer Monte-Carlo sampling toward the regions that
+              actually matter. A forward-backward scheme pairs robotics-style <strong>Rapidly-exploring Random Trees
+              (RRTs)</strong> with second-order backward integration for far sharper value-function estimates
+              <a class="ref" target="_blank" rel="noopener" href="https://arxiv.org/abs/2210.10534">[IEEE TAC 2024]</a><a class="ref" target="_blank" rel="noopener" href="https://arxiv.org/abs/2103.14246">[Automatica 2023]</a>.
+            </li>
+            <li>
+              <strong>Borrowing from generative AI to steer stochastic systems.</strong> My
+              <strong>Score-Matching Time-Reversal Control Synthesis</strong> learns the score function of a
+              time-reversed diffusion &mdash; the same mathematics behind modern diffusion models &mdash; to build a
+              feedback law that almost surely drives a nonlinear stochastic system to its target. By trading intractable
+              optimality for provable <em>finite-time attractability</em>, it sidesteps the curse of dimensionality
+              <a class="ref" target="_blank" rel="noopener" href="https://arxiv.org/abs/2504.00238">[CDC 2025]</a>.
+              <span class="why">Why it matters: it turns a deep idea from AI into a controller with hard guarantees.</span>
+            </li>
+            <li>
+              <strong>Certified control via convex optimization.</strong> Using <strong>sums-of-squares (SOS)
+              polynomial optimization</strong>, I approximate value functions by searching the convex cone of SOS
+              polynomials, yielding solvable semidefinite programs with guaranteed performance bounds and feedback
+              policies for a broad class of nonlinear systems
+              <a class="ref" target="_blank" rel="noopener" href="Publications.html">[CDC 2019]</a>.
+            </li>
+          </ul>
+
+          <!-- ===================== Pillar 3: Applications ===================== -->
+          <h2 id="applications">Real-World Systems &mdash; theory that leaves the whiteboard</h2>
+          <p class="section-lead">The ultimate test of a control theory is how it performs in the physical world.</p>
+
+          <!-- AeroMarine -->
+          <div class="fig-split">
+            <div class="fig-text">
+              <h4 class="app-title">A drone that flies <em>and</em> sails</h4>
+              <p>
+                In the M&sup3;AC Lab I customized, modeled, and control the <strong>AeroMarine</strong>, a multi-modal
+                drone that both flies and sails. It is the perfect testbed for hybrid control: taking off is a
+                controlled switch, landing on water is an autonomous switch, and the state space itself changes
+                dimension between modes. My models culminate in a high-fidelity formulation coupling full 6-DoF flight
+                dynamics with motor dynamics, so the HMP-MAS solver can directly optimize the trade-off between fast,
+                energy-hungry flight and slow, efficient sailing
+                <a class="ref" target="_blank" rel="noopener" href="https://asmedigitalcollection.asme.org/lettersdynsys/article/3/3/031008/1168966">[ASME Letters DSC 2023]</a>.
+              </p>
+            </div>
+            <figure class="fig-media">
+              <img src="images/AeroMarineDroneM3AC_fly.jpeg" alt="The AeroMarine multi-modal drone, capable of both flying above the water and sailing on its surface." loading="lazy" onerror="this.closest('figure').classList.add('fig-missing')" />
+              <figcaption>AeroMarine &mdash; a flying-and-sailing testbed for hybrid control.</figcaption>
+            </figure>
+          </div>
+
+          <!-- EV -->
+          <div class="fig-split reverse">
+            <div class="fig-text">
+              <h4 class="app-title">A smarter electric-vehicle transmission</h4>
+              <p>
+                I co-designed and implemented optimal control for a novel, <strong>patented</strong> dual-planetary
+                transmission for electric vehicles that delivers power seamlessly through gear transitions
+                <a class="ref" target="_blank" rel="noopener" href="https://patents.google.com/patent/US9702438B2">[US Patent 9,702,438 B2]</a>.
+                The experimentally validated HMP-based controller revealed a counter-intuitive "eco" strategy: briefly
+                <em>regenerating</em> power during a shift can lower total energy use even while accelerating &mdash;
+                the opposite of the full-torque "sport" strategy
+                <a class="ref" target="_blank" rel="noopener" href="https://doi.org/10.1016/j.nahs.2016.08.004">[NAHS 2017]</a>.
+                <span class="why">Why it matters: the same math that lands drones squeezes more range out of an EV.</span>
+              </p>
+            </div>
+            <figure class="fig-media">
+              <img src="images/Transmission_Efficiency.png" alt="Efficiency map and experimental setup for the patented dual-planetary electric-vehicle transmission." loading="lazy" onerror="this.closest('figure').classList.add('fig-missing')" />
+              <figcaption>Efficiency map for the patented dual-planetary transmission.</figcaption>
+            </figure>
+          </div>
+
+          <!-- Transportation -->
+          <div class="fig-split">
+            <div class="fig-text">
+              <h4 class="app-title">Greener freight corridors</h4>
+              <p>
+                To cut energy use across large-scale freight transport, I am architecting a hierarchical controller that
+                marries strategic route planning with real-time operations &mdash; freight signal priority and speed
+                advisory. Developed with the <strong>Alabama Transportation Institute</strong> and
+                <strong>Mercedes-Benz</strong>, it is validated on a detailed hardware-in-the-loop digital twin
+                (Truck-DT) of the transportation network.
+              </p>
+            </div>
+            <figure class="fig-media">
+              <img src="images/PlatoonOverHillsWithTrafficLightSize.png" alt="A platoon of trucks traversing hilly terrain with connected traffic signals, illustrating the freight energy-optimization problem." loading="lazy" onerror="this.closest('figure').classList.add('fig-missing')" />
+              <figcaption>Energy-optimal freight over real road networks.</figcaption>
+            </figure>
+          </div>
+
+          <!-- Trading -->
+          <div class="fig-split reverse">
+            <div class="fig-text">
+              <h4 class="app-title">Optimal execution in financial markets</h4>
+              <p>
+                I developed a Hybrid Mean-Field Game framework for <strong>optimal execution</strong> in markets with a
+                major agent and many high-frequency traders. By modeling a trader's option to exit the market as a
+                discrete switch in a hybrid market model, the approach yields computationally efficient best-response
+                strategies that form an &epsilon;-Nash equilibrium
+                <a class="ref" target="_blank" rel="noopener" href="https://doi.org/10.1109/CDC.2017.8264119">[CDC 2017]</a>.
+                <span class="why">Why it matters: the theory of switching machines maps directly onto the decision to keep trading or stop.</span>
+              </p>
+            </div>
+            <figure class="fig-media">
+              <img src="images/Finance_Major_Agent.png" alt="A market model with a major agent interacting with a population of minor high-frequency traders." loading="lazy" onerror="this.closest('figure').classList.add('fig-missing')" />
+              <figcaption>A major agent among many high-frequency traders.</figcaption>
+            </figure>
+          </div>
+
+          <!-- MEMS -->
+          <div class="fig-split">
+            <div class="fig-text">
+              <h4 class="app-title">More accurate MEMS gyroscopes</h4>
+              <p>
+                Earlier in my career I improved the accuracy and efficiency of vibratory MEMS gyroscopes using
+                <strong>parametric resonance</strong>. A parametric study revealed new high-amplitude resonance modes,
+                and a Floquet-theory-based stability criterion I developed makes these tiny sensors more robust to
+                manufacturing imperfections by pinning down exactly how resonance and stability relate
+                <a class="ref" target="_blank" rel="noopener" href="https://doi.org/10.1007/s00707-011-0609-5">[Acta Mechanica 2012]</a>.
+              </p>
+            </div>
+            <figure class="fig-media">
+              <img src="images/Gyro_Schematic.png" alt="Schematic of a parametrically resonated MEMS gyroscope and its resonance response." loading="lazy" onerror="this.closest('figure').classList.add('fig-missing')" />
+              <figcaption>A parametrically resonated MEMS gyroscope.</figcaption>
+            </figure>
+          </div>
+
+          <!-- ===================== Future directions ===================== -->
+          <h2 id="future">Where I'm Headed</h2>
+          <p class="section-lead">Three directions I am most excited to push next.</p>
+
+          <div class="thrust-grid">
+            <div class="thrust">
+              <h4>Control at every network scale</h4>
+              <p>
+                A single measure-theoretic framework for multi-agent stochastic hybrid systems &mdash; shifting from
+                conventional "normalized" probability measures to scalable "unnormalized" occupation measures &mdash;
+                so the same theory governs a few agents on a small network and their graphon and mean-field limits.
+                The payoff I have in mind: provably optimal, energy-efficient coordination of large
+                <strong>AeroMarine</strong> drone teams.
+              </p>
+            </div>
+            <div class="thrust">
+              <h4>Autonomous surgical robotics</h4>
+              <p>
+                Bringing my stochastic hybrid control framework to <strong>robotically executed thrombectomy</strong>
+                &mdash; the safe, precise manipulation of FDA-approved devices used to treat stroke. The goal is a
+                system that reasons under uncertainty and hands control back to a clinician the moment confidence drops,
+                helping extend advanced stroke care to community hospitals.
+              </p>
+            </div>
+            <div class="thrust">
+              <h4>Steering distributions in space &amp; beyond</h4>
+              <p>
+                Directly controlling the full <em>distribution</em> of a nonlinear stochastic hybrid system's state, by
+                extending TC-SHMP for precise steering and DC-CDHOC for shaping the terminal distribution &mdash; with a
+                flagship test on <strong>pinpoint planetary landing</strong>, where the landing ellipse must be
+                controlled under real atmospheric uncertainty.
+              </p>
+            </div>
+          </div>
+
+          <p class="closing-note">
+            Curious about any of this? The <a href="Publications.html">publications page</a> has the full papers, and
+            I am always glad to <a href="Contact.html">talk shop</a> &mdash; with fellow researchers and with teams
+            building real autonomous systems alike.
+          </p>
+
+        </div><!-- /main-col -->
+      </div><!-- /content -->
+    </div><!-- /page -->
+
+  </div><!-- /wrapper -->
+
+  <footer id="footer">
+    <span id="lastmod"></span><br />
+    &copy; Ali Pakniyat
+  </footer>
+
+</div><!-- /container -->
+
+<script>
+  (function () {
+    var btn = document.querySelector('.nav-toggle');
+    var menu = document.getElementById('navmenu');
+    if (btn && menu) {
+      btn.addEventListener('click', function () {
+        var open = menu.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    }
+    var lm = document.getElementById('lastmod');
+    if (lm) { lm.textContent = 'Last modified: ' + document.lastModified.slice(0, 10); }
+  })();
+</script>
+</body>
+</html>
